@@ -54,7 +54,7 @@ def load_files(directory):
 
     
     
-    #this code is from page rank.  DO not use make my own version!!!!!!!!!!!!!!!!!!!!!!
+   
     
     dict_of_file_content = dict()
 
@@ -212,7 +212,7 @@ def top_files(query, files, idfs, n):
 
         document_query_score[document_name] = 0 # this is being initialize for each documentname and will be used in the next section
         # this is a dictionary to hold all the corpuses file's tdifs
-        tfidfs[document_name] = dict() #########???????????????????????????? BUG??? key looks off
+        tfidfs[document_name] = dict() 
         for word in specific_words_in_specific_document:
             document_plus_word_key = document_name + word 
             tfidfs[document_plus_word_key] = (tfs[document_plus_word_key] * idfs[word])
